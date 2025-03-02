@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Person</class>
+ <widget class="QWidget" name="Person">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="minimumSize">
+           <size>
+            <width>130</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+            background-color: #007BFF; /* 蓝色背景 */
+            color: white; /* 白色文字 */
+            border: none;
+            border-radius: 5px; /* 圆角 */
+            padding: 1px;
+            font-size: 14px;
+        }
+        QPushButton:hover {
+            background-color: #0056b3; /* 鼠标悬停时，背景变为深蓝色 */
+        }</string>
+          </property>
+          <property name="text">
+           <string>主页</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Policy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>25</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="MyButton">
+          <property name="minimumSize">
+           <size>
+            <width>130</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+            background-color: #007BFF; /* 蓝色背景 */
+            color: white; /* 白色文字 */
+            border: none;
+            border-radius: 5px; /* 圆角 */
+            padding: 1px;
+            font-size: 14px;
+        }
+        QPushButton:hover {
+            background-color: #0056b3; /* 鼠标悬停时，背景变为深蓝色 */
+        }</string>
+          </property>
+          <property name="text">
+           <string>我的首页</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Policy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>25</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="secureButton">
+          <property name="minimumSize">
+           <size>
+            <width>130</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+            background-color: #007BFF; /* 蓝色背景 */
+            color: white; /* 白色文字 */
+            border: none;
+            border-radius: 5px; /* 圆角 */
+            padding: 1px;
+            font-size: 14px;
+        }
+        QPushButton:hover {
+            background-color: #0056b3; /* 鼠标悬停时，背景变为深蓝色 */
+        }</string>
+          </property>
+          <property name="text">
+           <string>账号安全</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="SecureWidget">
+      <widget class="QLabel" name="nameLabel">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>100</y>
+         <width>71</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #333333; /* 字体颜色 */
+    font-size: 20px; /* 字体大小（加大） */
+    font-weight: bold; /* 字体加粗 */
+    font-family: &quot;Arial&quot;, &quot;Helvetica&quot;, sans-serif; /* 字体样式 */
+    padding: 5px; /* 内边距 */
+    border: none; /* 无边框 */
+    background-color: transparent; /* 背景透明 */
+}</string>
+       </property>
+       <property name="text">
+        <string>昵称：</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="nameText">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>100</y>
+         <width>281</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTextEdit {
+    background-color: #f9f9f9; /* 背景颜色 */
+    color: #333333; /* 字体颜色 */
+    font-size: 16px; /* 字体大小 */
+    font-family: &quot;Arial&quot;, &quot;Helvetica&quot;, sans-serif; /* 字体样式 */
+    border: 1px solid #cccccc; /* 边框颜色 */
+    border-radius: 5px; /* 圆角 */
+    padding: 10px; /* 内边距 */
+    selection-background-color: #a0cfff; /* 选中文本背景颜色 */
+    selection-color: #ffffff; /* 选中文本颜色 */
+
+}</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="accountLabel">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>170</y>
+         <width>71</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: #333333; /* 字体颜色 */
+    font-size: 20px; /* 字体大小（加大） */
+    font-weight: bold; /* 字体加粗 */
+    font-family: &quot;Arial&quot;, &quot;Helvetica&quot;, sans-serif; /* 字体样式 */
+    padding: 5px; /* 内边距 */
+    border: none; /* 无边框 */
+    background-color: transparent; /* 背景透明 */
+}</string>
+       </property>
+       <property name="text">
+        <string>账号：</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="accountText">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>170</y>
+         <width>281</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTextEdit {
+    background-color: #f9f9f9; /* 背景颜色 */
+    color: #333333; /* 字体颜色 */
+    font-size: 16px; /* 字体大小 */
+    font-family: &quot;Arial&quot;, &quot;Helvetica&quot;, sans-serif; /* 字体样式 */
+    border: 1px solid #cccccc; /* 边框颜色 */
+    border-radius: 5px; /* 圆角 */
+    padding: 10px; /* 内边距 */
+    selection-background-color: #a0cfff; /* 选中文本背景颜色 */
+    selection-color: #ffffff; /* 选中文本颜色 */
+
+}</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>240</y>
+         <width>221</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>登录密码   建议定期更换</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="changepasswordButton">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>250</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #e53935;color: white;font-size: 14px;font-family: &quot;Arial&quot;, sans-serif;font-weight: bold;  border: 2px solid #005A9E;  border-radius: 5px; transition: all 0.3s ease; 
+hover background-color: #d32f2f ; hover border: 2px solid #004578; 
+pressed background-color: #004578;pressed border: 2px solid #002F5D; pressed color: #D6EFFF; </string>
+       </property>
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="logoutButton">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>310</y>
+         <width>91</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #e53935;color: white;font-size: 14px;font-family: &quot;Arial&quot;, sans-serif;font-weight: bold;  border: 2px solid #005A9E;  border-radius: 5px; transition: all 0.3s ease; 
+hover background-color: #d32f2f ; hover border: 2px solid #004578; 
+pressed background-color: #004578;pressed border: 2px solid #002F5D; pressed color: #D6EFFF; </string>
+       </property>
+       <property name="text">
+        <string>退出登录</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="MyWidget">
+      <widget class="QWidget" name="widget_3" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>881</width>
+         <height>781</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="nameLabel2">
+             <property name="font">
+              <font>
+               <family>Arial</family>
+               <pointsize>-1</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    color: #333333; /* 字体颜色 */
+    font-size: 20px; /* 字体大小（加大） */
+    font-weight: bold; /* 字体加粗 */
+    font-family: &quot;Arial&quot;, &quot;Helvetica&quot;, sans-serif; /* 字体样式 */
+    padding: 5px; /* 内边距 */
+    border: none; /* 无边框 */
+    background-color: transparent; /* 背景透明 */
+}</string>
+             </property>
+             <property name="text">
+              <string>昵称：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="nameText2">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="font">
+              <font>
+               <family>Arial</family>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QTextEdit {
+    background-color: #f9f9f9; /* 背景颜色 */
+    color: #333333; /* 字体颜色 */
+    font-size: 16px; /* 字体大小 */
+    font-family: &quot;Arial&quot;, &quot;Helvetica&quot;, sans-serif; /* 字体样式 */
+    border: 1px solid #cccccc; /* 边框颜色 */
+    border-radius: 5px; /* 圆角 */
+    padding: 10px; /* 内边距 */
+    selection-background-color: #a0cfff; /* 选中文本背景颜色 */
+    selection-color: #ffffff; /* 选中文本颜色 */
+
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="accountLabel2">
+             <property name="font">
+              <font>
+               <family>Arial</family>
+               <pointsize>-1</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    color: #333333; /* 字体颜色 */
+    font-size: 20px; /* 字体大小（加大） */
+    font-weight: bold; /* 字体加粗 */
+    font-family: &quot;Arial&quot;, &quot;Helvetica&quot;, sans-serif; /* 字体样式 */
+    padding: 5px; /* 内边距 */
+    border: none; /* 无边框 */
+    background-color: transparent; /* 背景透明 */
+}</string>
+             </property>
+             <property name="text">
+              <string>账号：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="accountText2">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="font">
+              <font>
+               <family>Arial</family>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QTextEdit {
+    background-color: #f9f9f9; /* 背景颜色 */
+    color: #333333; /* 字体颜色 */
+    font-size: 16px; /* 字体大小 */
+    font-family: &quot;Arial&quot;, &quot;Helvetica&quot;, sans-serif; /* 字体样式 */
+    border: 1px solid #cccccc; /* 边框颜色 */
+    border-radius: 5px; /* 圆角 */
+    padding: 10px; /* 内边距 */
+    selection-background-color: #a0cfff; /* 选中文本背景颜色 */
+    selection-color: #ffffff; /* 选中文本颜色 */
+
+}</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Policy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QTabWidget" name="orderTabWidget">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QTabBar::tab {
+    width: 100px; 
+    height: 40px; 
+	color: rgb(0, 0, 0);
+}
+
+QTabBar::tab:selected {
+	background-color: rgb(85, 255, 255)
+}
+
+QTabBar::tab:!selected {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+          </property>
+          <property name="tabPosition">
+           <enum>QTabWidget::TabPosition::North</enum>
+          </property>
+          <property name="tabShape">
+           <enum>QTabWidget::TabShape::Rounded</enum>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="elideMode">
+           <enum>Qt::TextElideMode::ElideLeft</enum>
+          </property>
+          <property name="tabBarAutoHide">
+           <bool>false</bool>
+          </property>
+          <widget class="QWidget" name="allorderWidget">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <attribute name="title">
+            <string>全部订单</string>
+           </attribute>
+           <widget class="QScrollArea" name="ordersArea1">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>821</width>
+              <height>600</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>1677215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QScrollArea {
+                background-color: #333333; /* 浅灰色背景 */
+                border: none; /* 去除默认边框 */
+                border-radius: 7px; /* 四角圆弧 */
+                padding: 2px; /* 内边距 */
+            }</string>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="ordersWidget1">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>817</width>
+               <height>596</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">            QWidget {
+                background-color: #333333; /* 浅灰色背景 */
+                border-radius: 7px; /* 四角圆弧 */
+            }</string>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="waitTaborderWidget">
+           <attribute name="title">
+            <string>待出行</string>
+           </attribute>
+           <widget class="QScrollArea" name="ordersArea2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>821</width>
+              <height>600</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>1677215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QScrollArea {
+                background-color: #333333; /* 浅灰色背景 */
+                border: none; /* 去除默认边框 */
+                border-radius: 7px; /* 四角圆弧 */
+                padding: 2px; /* 内边距 */
+            }</string>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="ordersWidget2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>817</width>
+               <height>596</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">            QWidget {
+                background-color: #333333; /* 浅灰色背景 */
+                border-radius: 7px; /* 四角圆弧 */
+            }</string>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="completedorderWidget">
+           <attribute name="title">
+            <string>已完成</string>
+           </attribute>
+           <widget class="QScrollArea" name="ordersArea3">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>821</width>
+              <height>600</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>1677215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QScrollArea {
+                background-color: #333333; /* 浅灰色背景 */
+                border: none; /* 去除默认边框 */
+                border-radius: 7px; /* 四角圆弧 */
+                padding: 2px; /* 内边距 */
+            }</string>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="ordersWidget3">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>817</width>
+               <height>596</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">            QWidget {
+                background-color: #333333; /* 浅灰色背景 */
+                border-radius: 7px; /* 四角圆弧 */
+            }</string>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

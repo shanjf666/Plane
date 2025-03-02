@@ -1,0 +1,72 @@
+/* 默认按钮样式 */
+QPushButton {
+    background-color:  #e53935;       /* 按钮背景颜色（蓝色） */
+    color: white;                  /* 按钮文字颜色（白色） */
+    font-size: 16px;                 /* 按钮文字大小 */
+    font-family: "Arial", sans-serif; /* 字体 */
+    font-weight: bold;               /* 加粗文字 */
+    padding: 10px;              /* 内边距 */
+    border: 2px solid #005A9E;       /* 深蓝色边框 */
+    border-radius: 5px;              /* 圆角 */
+    transition: all 0.3s ease;       /* 添加动画效果 */
+}
+
+/* 鼠标悬停效果 */
+QPushButton:hover {
+    background-color: #d32f2f  ;     /* 悬停时背景更深 */
+    border: 2px solid #004578;       /* 悬停时边框更深 */
+}
+
+/* 鼠标按下效果 */
+QPushButton:pressed {
+    background-color: #004578;       /* 按下时背景更深 */
+    border: 2px solid #002F5D;       /* 按下时边框更深 */
+    color: #D6EFFF;                  /* 按下时文字颜色略浅 */
+}
+
+/* 禁用状态 */
+QPushButton:disabled {
+    background-color: #E1E1E1;       /* 灰色背景 */
+    color: #A0A0A0;                  /* 灰色文字 */
+    border: 2px solid #C0C0C0;       /* 灰色边框 */
+}
+
+
+/* 文本框（QLineEdit）样式 */
+QLineEdit {
+    background-color: #F5F5F5;        /* 背景颜色 */
+    color: #333333;                  /* 文本颜色 */
+    font-size: 14px;                 /* 字体大小 */
+    font-family: "Arial", sans-serif; /* 字体 */
+    padding: 5px;               /* 内边距 */
+    border: 2px solid #2e2e2e;       /* 边框颜色 */
+    border-radius: 5px;              /* 圆角 */
+    outline: none;                   /* 去掉聚焦时的默认高亮框 */
+}
+
+/* 文本框聚焦时样式 */
+QLineEdit:focus {
+    border:  1px solid #5b86e5;       /* 聚焦时的边框颜色 */
+    background-color: #FFFFFF;       /* 聚焦时的背景颜色 */
+}
+
+/* 标签（QLabel）样式，黑色字体 */
+QLabel {
+    color: black;                  /* 字体颜色为黑色 */
+    font-size: 16px;                 /* 字体大小为 16px */
+    font-weight: bold;               /* 字体加粗 */
+    font-family: "Arial", sans-serif; /* 字体 */
+    margin: 10px 0;                  /* 外边距，增加间距 */
+    text-align: center;              /* 文本居中显示 */
+    background-color: transparent;   /* 默认背景透明 */
+}
+
+/* 可选：为特定 QLabel 添加深色背景 */
+QLabel[background="dark"] {
+    background-color: #333333;       /* 深灰色背景 */
+    border-radius: 8px;              /* 圆角背景 */
+    padding: 8px 12px;               /* 内边距，避免文字贴边 */
+    border: 1px solid #444444;       /* 边框颜色，与背景协调 */
+}
+
+

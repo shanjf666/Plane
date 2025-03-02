@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/bird.png</file>
+        <file>img/bk.png</file>
+        <file>img/dhbk.png</file>
+        <file>img/kuaitui.png</file>
+        <file>img/news.png</file>
+        <file>img/per.png</file>
+        <file>img/R-C.gif</file>
+        <file>img/trans.png</file>
+        <file>img/manager_background.jpg</file>
+        <file>img/registerPicture.png</file>
+        <file>img/background.png</file>
+        <file>img/informPicture.png</file>
+        <file>img/home.png</file>
+        <file>img/down.jpg</file>
+        <file>img/logo(1).png</file>
+        <file>img/canton.gif</file>
+        <file>img/shanghai.gif</file>
+        <file>img/background2.jpg</file>
+    </qresource>
+</RCC>

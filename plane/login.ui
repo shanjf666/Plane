@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QWidget" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget_5" native="true">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>230</y>
+     <width>421</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:10px;
+</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="2" column="0">
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QCheckBox" name="agreement">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="contextMenuPolicy">
+          <enum>Qt::ContextMenuPolicy::ActionsContextMenu</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 0);
+QCheckBox {
+                font-size: 16px;
+                color: #333;
+                padding: 10px;
+            }
+
+            QCheckBox::indicator {
+                width: 25px;
+                height: 25px;
+                border: 3px solid #4CAF50;
+                border-radius: 6px;  /* 圆角边框 */
+                background-color: rgb(0, 0, 0);
+                transition: all 0.3s ease;  /* 添加过渡动画 */
+            }
+
+            QCheckBox::indicator:checked {
+                background-color: #4CAF50;  /* 选中时背景为绿色 */
+                border: 3px solid #4CAF50;
+            }
+
+            QCheckBox::indicator:unchecked {
+                background-color: white;
+                border: 3px solid rgb(0, 0, 0);  /* 未选中时边框变为灰色 */
+            }
+
+            QCheckBox:hover::indicator {
+                background-color: #e8f5e8;  /* 悬停时背景色变化 */
+            }
+
+            QCheckBox:pressed::indicator {
+                background-color: #388e3c;  /* 按下时背景变为深绿色 */
+            }
+
+            QCheckBox:disabled {
+                color: #aaa;
+            }
+
+            QCheckBox:disabled::indicator {
+                background-color: #f2f2f2;
+                border: 3px solid #ccc;
+            }</string>
+         </property>
+         <property name="text">
+          <string>   已阅读并同意</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="privacyButton">
+         <property name="font">
+          <font>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 127);</string>
+         </property>
+         <property name="text">
+          <string>《隐私条例》</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>忘记密码</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QWidget" name="widget_4" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <widget class="QPushButton" name="registerButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #e53935;color: white;font-size: 16px;font-family: &quot;Arial&quot;, sans-serif;font-weight: bold;  padding: 10px;border: 2px solid #005A9E;  border-radius: 5px; transition: all 0.3s ease; 
+hover background-color: #d32f2f ; hover border: 2px solid #004578; 
+pressed background-color: #004578;pressed border: 2px solid #002F5D; pressed color: #D6EFFF; </string>
+         </property>
+         <property name="text">
+          <string>注册</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="loginButton">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #e53935;color: white;font-size: 16px;font-family: &quot;Arial&quot;, sans-serif;font-weight: bold;  padding: 10px;border: 2px solid #005A9E;  border-radius: 5px; transition: all 0.3s ease; 
+hover background-color: #d32f2f ; hover border: 2px solid #004578; 
+pressed background-color: #004578;pressed border: 2px solid #002F5D; pressed color: #D6EFFF; </string>
+         </property>
+         <property name="text">
+          <string>登录</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>12</width>
+           <height>12</height>
+          </size>
+         </property>
+         <property name="shortcut">
+          <string>Return</string>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="exitButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #e53935;color: white;font-size: 16px;font-family: &quot;Arial&quot;, sans-serif;font-weight: bold;  padding: 10px;border: 2px solid #005A9E;  border-radius: 5px; transition: all 0.3s ease; 
+hover background-color: #d32f2f ; hover border: 2px solid #004578; 
+pressed background-color: #004578;pressed border: 2px solid #002F5D; pressed color: #D6EFFF; </string>
+         </property>
+         <property name="text">
+          <string>退出</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QWidget" name="widget_6" native="true">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="0">
+        <widget class="QLabel" name="passwordLabel">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: black;font-size: 16px; font-weight: bold; font-family: &quot;Arial&quot;, sans-serif;margin: 10px 0;  text-align: center;background-color: transparent;</string>
+         </property>
+         <property name="text">
+          <string>密码</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="passwordEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #F5F5F5;  color: #333333;   font-size: 14px;font-family: &quot;Arial&quot;, sans-serif;padding: 5px;  border: 2px solid #2e2e2e; border-radius: 5px;outline: none;
+focus border:  1px solid #5b86e5;focus background-color: #FFFFFF;</string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::EchoMode::Password</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="usernameEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #F5F5F5;  color: #333333;   font-size: 14px;font-family: &quot;Arial&quot;, sans-serif;padding: 5px;  border: 2px solid #2e2e2e; border-radius: 5px;outline: none;
+focus border:  1px solid #5b86e5;focus background-color: #FFFFFF;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="usernameLabel">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: black;font-size: 16px; font-weight: bold; font-family: &quot;Arial&quot;, sans-serif;margin: 10px 0;  text-align: center;background-color: transparent;</string>
+         </property>
+         <property name="text">
+          <string>用户名</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>usernameEdit</tabstop>
+  <tabstop>passwordEdit</tabstop>
+  <tabstop>agreement</tabstop>
+  <tabstop>privacyButton</tabstop>
+  <tabstop>registerButton</tabstop>
+  <tabstop>loginButton</tabstop>
+  <tabstop>exitButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
